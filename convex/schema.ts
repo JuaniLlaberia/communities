@@ -22,7 +22,7 @@ export const Users = Table('users', {
   email: v.string(),
   profileImage: v.optional(v.string()),
   clerkIdentifier: v.string(),
-  stripeId: v.string(),
+  stripeId: v.optional(v.string()),
 });
 
 export const Communities = Table('communities', {
